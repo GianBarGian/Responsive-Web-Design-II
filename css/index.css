@@ -332,35 +332,88 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-    
+	
+	nav {
+		padding-top: 20px;
+		padding-bottom: 52px;
+	}
+
+	nav .logo {
+		padding-bottom: 20px;
+	}
+
     nav div {
-        flex-direction: column;
+		flex-direction: column; 
+		width: 102.65%;
+		padding-right: 0;
+		
     }
 
     nav div a {
-        width: 108.7%;
-        font-size: 2rem;
+		width: 100%;
+        font-size: 2.1rem;
         border-top:1px solid gray;
         text-align: center;
-        padding-bottom:  10px;
+        padding: 20px 0;
         color: gray;
-    }
+	}
+
+	header {
+		padding-bottom: 56px;
+	}
+
+	header div:first-child {
+		padding: 0 18%;
+	}
+
+	header h1 {
+		font-size: 7.1rem;
+	}
 
     nav div a:last-child {
         border-bottom: 1px solid gray;
-    }
+	}
+	
+	.central-section {
+		padding-top: 27px;
+	}
 
     .top {
         flex-direction: column;
-    }
+	}
+	
+	.top div {
+		padding-left: 0%;
+	}
 
     .top div:first-child {
-        padding-bottom: 40px;
-    }
+        padding-bottom: 50px;
+	}
+	
+	.middle-img {
+		height: 190px;
+		padding-top: 60px;
+	}
 
     .bottom {
         flex-direction: column;
-    }
+	}
+	
+	.bottom div {
+		padding-left: 0;
+	}
+
+	.bottom div:first-child {
+		padding-bottom: 69px;
+	}
+
+	.bottom div:last-child {
+		padding-top: 67px;
+	}
+
+	address {
+		padding-left: 0;
+	}
 
     .services-page header h1 {
         text-align: center;
