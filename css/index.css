@@ -74,11 +74,12 @@ nav {
 	
 	display: flex;
 	justify-content: space-between;
-	padding: 50px 0;
+	padding: 30px 0 70px 0;
+	font-size: 1.6rem;
 }
 
 nav div {
-	width: 550px;
+	width: 68.8%;
 	display: flex;
 	justify-content: space-between;	
 	align-items: center;
@@ -87,36 +88,44 @@ nav div {
 nav a{
 	color: rgb(68, 57, 57);
 	text-decoration: none;
-	padding-top: 10px;
+	
 }
 
-.header-index {
+header {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	text-align: center;
+	padding-bottom: 42px;
 }
 
-h1 {
-	font-size: 5em;
-	padding-bottom: 30px;
+header div:first-child {
+	padding: 52px 0 0 14%;
+}
+
+header h1 {
+	font-size: 7rem;
+	line-height: 1.02;
+	padding-bottom: 20px;
 }
 
 header a {
 	text-decoration: none;
 	color: black;
-	padding: 7px 70px;
+	padding: 3px 15%;
 	border: 2px solid black;
+	font-size: 1.7rem;
+	
 }
 
 .div-line {
-	
-	margin: 30px 0;
+	margin: 30px 0 35px 0;
 	border: 1px solid black;
 }
 
 .central-section {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 13px;
 }
 
 .top {
@@ -125,11 +134,21 @@ header a {
 }
 
 .top div:first-child {
-	padding-right: 20px;
+	padding-right: 4px;
+}
+
+h2 {
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+p {
+	font-size: 1.6rem;
 }
 
 .middle-img {
-	padding: 50px 0;
+	padding: 35px 0 30px 0;
 }
 
 .bottom {
@@ -137,33 +156,34 @@ header a {
 	justify-content: space-between;
 }
 
-.middle {
-	padding: 0 20px;
-}
-
-p {
-	font-size: 1.2em;
-	
-}
-
-h2 {
-	font-size: 1.5em;
+.bottom h2 {
+	font-size: 1.6rem;
 	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.bottom p {
+	font-size: 1.6rem;
+	padding-right: 6.5%;
+}
+
+address {
+	font-size: 1.6rem;
 }
 
 address p {
 	line-height: 3;
-	font-size: 1em;
-}
-
-footer {
-	padding: 60px 0;
-	text-align: center;
 }
 
 address a {
 	text-decoration: none;
 	color: black;
+}
+
+footer {
+	font-size: 1.6rem;
+	padding: 38px 0;
+	text-align: center;
 }
 
 .h1-services {
