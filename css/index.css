@@ -1,1 +1,426 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 62.5%;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+.container {
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+nav {
+	
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0 70px 0;
+	font-size: 1.6rem;
+}
+
+nav div {
+	width: 68.8%;
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+}
+
+nav a{
+	color: rgb(68, 57, 57);
+	text-decoration: none;
+	
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding-bottom: 42px;
+}
+
+header div:first-child {
+	padding: 52px 0 0 14%;
+}
+
+header h1 {
+	font-size: 7rem;
+	line-height: 1.02;
+	padding-bottom: 20px;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+	padding: 3px 15%;
+	border: 2px solid black;
+	font-size: 1.7rem;
+	
+}
+
+.div-line {
+	margin: 30px 0 35px 0;
+	border: 1px solid black;
+}
+
+.central-section {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 13px;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.top div:first-child {
+	padding-right: 4px;
+}
+
+h2 {
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+.middle-img {
+	padding: 35px 0 30px 0;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom h2 {
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.bottom p {
+	font-size: 1.6rem;
+	padding-right: 6.5%;
+}
+
+address {
+	font-size: 1.6rem;
+}
+
+address p {
+	line-height: 3;
+}
+
+address a {
+	text-decoration: none;
+	color: black;
+}
+
+footer {
+	font-size: 1.6rem;
+	padding: 38px 0;
+	text-align: center;
+}
+
+.h1-services {
+	font-size: 3em;
+	padding: 25px 0;
+}
+
+.services-main-section {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	
+
+}
+
+.box {
+	background-color: rgba(120, 164, 194, 0.61);
+	width: 48%;
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+
+.box h2 {
+	padding: 20px 0 0 10px;
+}
+
+.box p {
+	padding: 0 10px;
+}
+
+.button {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 10px 30px;
+	margin: 20px 0 20px 10px;
+	color: black;
+	text-decoration: none;
+	background: white;
+	border-radius: 5px;
+}
+
+.services-bot-section {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-bot-section img {
+	width: 2135px;
+}
+
+.services-bot-section p {
+	padding-right: 40px;
+	padding-bottom: 20px;
+}
+
+.services-bot-section ul {
+	list-style-type: square;
+	list-style-position: inside;
+	line-height: 2;
+}
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        width: 97.5%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    nav .logo {
+        padding-bottom: 38px;
+    }
+
+    nav div {
+		width: 98%;
+		padding-right: 4.8%;
+        
+    }
+    
+    header {
+        padding-bottom: 55px;
+    }
+
+    .header-img {
+        display: none;
+	}    
+	
+	header div:first-child {
+		padding: 0 31%;
+	}
+
+	.central-section {
+		padding-bottom: 8px;
+	}
+
+	.top div {
+		padding-left: 1%;
+	}
+
+	.top div p {
+		padding-right: 4%;
+	}
+
+	.middle-img {
+		height: 225px;
+	}
+
+	.bottom div{
+		padding-left: 1%;
+	}
+
+	.bottom div p {
+		padding-right: 12%;
+		line-height: 1.1;
+	}
+
+	address {
+		padding-left: 1%;
+	}
+
+    .services-page header {
+        padding-bottom: 15px;
+    }
+
+    .services-header-img {
+        width: 100%;
+    }
+
+    .services-page .services-info-img {
+        display: none;
+    }
+
+    .services-page ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services-page li {
+        width: 48%;  
+    }
+}
+
+@media screen and (max-width: 500px) {
+	
+	nav {
+		padding-top: 20px;
+		padding-bottom: 52px;
+	}
+
+	nav .logo {
+		padding-bottom: 20px;
+	}
+
+    nav div {
+		flex-direction: column; 
+		width: 102.65%;
+		padding-right: 0;
+		
+    }
+
+    nav div a {
+		width: 100%;
+        font-size: 2.1rem;
+        border-top:1px solid gray;
+        text-align: center;
+        padding: 20px 0;
+        color: gray;
+	}
+
+	header {
+		padding-bottom: 56px;
+	}
+
+	header div:first-child {
+		padding: 0 18%;
+	}
+
+	header h1 {
+		font-size: 7.1rem;
+	}
+
+    nav div a:last-child {
+        border-bottom: 1px solid gray;
+	}
+	
+	.central-section {
+		padding-top: 27px;
+	}
+
+    .top {
+        flex-direction: column;
+	}
+	
+	.top div {
+		padding-left: 0%;
+	}
+
+    .top div:first-child {
+        padding-bottom: 50px;
+	}
+	
+	.middle-img {
+		height: 190px;
+		padding-top: 60px;
+	}
+
+    .bottom {
+        flex-direction: column;
+	}
+	
+	.bottom div {
+		padding-left: 0;
+	}
+
+	.bottom div:first-child {
+		padding-bottom: 69px;
+	}
+
+	.bottom div:last-child {
+		padding-top: 67px;
+	}
+
+	address {
+		padding-left: 0;
+	}
+
+    .services-page header h1 {
+        text-align: center;
+    }
+
+    .services-page .box {
+        width: 100%;
+    }
+    
+}
